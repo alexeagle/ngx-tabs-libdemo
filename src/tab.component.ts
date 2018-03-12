@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+export type GoodTitle = 'one' | 'two';
 @Component({
   selector: 'ngx-tab',
   styles: [
@@ -16,6 +17,6 @@ import { Component, Input } from '@angular/core';
   `
 })
 export class TabComponent {
-  @Input() tabTitle: string;
+  @Input() tabTitle: GoodTitle;
   @Input() active = false;
 }
